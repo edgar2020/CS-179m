@@ -1,0 +1,89 @@
+.siteHeader
+{
+    background-color: var(--header-background-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-column-gap: 10px;
+}
+
+.rightSideOfHeader
+{
+ display: flex;  
+ position: relative; 
+}
+.headerTitle
+{
+    text-align: center;
+    width: fit-content;
+    text-align: center;
+    /* width: 90%; */
+    /* margin: 5px 0 0 0; */
+    margin: 0 auto;
+    font-size: 3.5rem;
+    color: aliceblue;
+    font-family: 'Caudex', serif;
+    /* background-color: red; */
+    
+}
+
+.keoghLogoContainer
+{
+    /* width: 100%; */
+    /* height: 90px; */
+    display: flex;
+    margin-left: 5px;
+    /* margin-right: 5px; */
+    /* background-color: rgb(214, 172, 255); */
+    justify-content: center;
+}
+.headerLogo
+{
+    /* margin: 0 auto; */
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    /* background-color: red; */
+    /* margin: auto; */
+
+}
+
+.signInContainer
+{
+    position: relative;
+    height: fit-content;
+    margin: auto 0 auto auto;
+}
+
+.signInInput
+{
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.signInButton
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 10%;
+    background: white;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d5a80;
+    border: none;
+    cursor: pointer;
+}
+
+#endOfYearSignOut
+{
+    font-size: 15px;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: red;
+    
+}

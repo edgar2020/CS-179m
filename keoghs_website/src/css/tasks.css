@@ -1,0 +1,273 @@
+#fileUploadContainer
+{
+    /* background-color: var(--t1); */
+    width: 50%;
+    border: 0.2rem solid black;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px auto;
+    text-align: center;
+}
+.loadedFileName
+{
+    margin-right: 10px;
+    font-size: 20px;
+    float: right;
+}
+#fileNameEcho
+{
+    text-decoration: none;
+    font-weight: normal;
+}
+#showFileDataContainer
+{
+    visibility: hidden;
+}
+#dispalyValidationMessage
+{
+    font-weight: bold;
+    color:var(--error-color);
+}
+#fileUploadButton
+{
+    visibility: hidden;
+    font-size: 20px;
+}
+.no-interact
+{
+    background-color: rgb(235, 235, 235);
+}
+.gridCell
+{
+    width: var(--button-dimension);
+    height: var(--button-dimension);
+    display: inline-block;
+    /* margin:0px 0px 0 0; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.containerPresent 
+{
+    background-color: rgb(192, 89, 63);
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: top;  
+    /* vertical-align: top;   
+    width: var(--button-dimension);
+    height: var(--button-dimension); */
+    /* position:relative;  */
+    /* top:50%;  */
+    /* left:50%;  */
+    /* transform:translate(-50%, -50%) */
+}
+.containerPresent {
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+        background-color: rgba(255, 255, 255, 0.463);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(121, 0, 0, 0.875);
+        border-radius: 3px;
+        
+        &:hover {
+            background: rgba(255,255,255,.2);
+        }
+    }
+}
+.displayContainerName
+{
+    /* position:absolute;  */
+    /* left:50%; top:50%;  */
+    transform-origin: center center; 
+    /* transform: translate(-50%, -50%);  */
+    /* transform: rotate(90deg); */
+    /* background-color: rebeccapurple;
+    display: inline-flex;
+    transform: rotate(90deg);
+    text-overflow: clip; */
+    display: inline-flex;
+    text-overflow: clip;
+    /* animation: slide-left 50s linear infinite; */
+}
+.containerPresent:hover .displayContainerName
+{
+    animation: none;
+    
+}
+.gridToggleButton.containerPresent:hover
+{
+    /* background-color: darkgoldenrod; */
+    border: 3px solid rgb(84, 64, 209)
+}
+.gridToggleButton.active
+{
+    background-color: green;
+}
+.unusable
+{
+    background-color: rgb(59, 59, 59);
+}
+
+.gridRow
+{
+    /* background-color: blue; */
+    width: fit-content;
+    /* height: var(--button-dimension); */
+}
+#containersToUnloadInput
+{
+    width: 800px;
+    display:inline-flex;
+    /* background-color: red; */
+}
+#manifestFileInput
+{
+    font-size: 20px;
+}
+
+button
+{
+    font-size: 20px;
+}
+input
+{
+    font-size: 20px;
+}
+#selectedButtonInfo
+{
+    /* background-color: aqua; */
+    width: 150px;
+    /* white-space: pre-wrap; */
+    /* text-wrap: ; */
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    border: 1px solid black;
+    padding: 10px;
+}
+.label
+{
+    padding: 7px;
+}
+.columnNumbers
+{
+    display: inline-block;
+    text-align: left;
+    width: 36px;
+}
+#colNumbers
+{
+    margin-left: 20px;
+    width: 100%;
+}
+.inputSection
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    width: fit-content;
+    background-color: rgb(255, 235, 194);
+}
+#inputContainerNamesContainer
+{
+    /* width: 20%; */
+    min-width: none;
+    max-width: 350px;
+}
+#inputContainerName{
+    width: 95%;
+}
+#loadUnloadInputs
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#userContainerShowContainers
+{
+    margin: 5px 0;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.individualContainers
+{
+    margin-left: 30px;
+    position: relative;
+    border: 1px solid black;
+    background-color: gainsboro;
+    padding: 5px 15px 5px 5px;
+}
+
+.removeContainerButton
+{
+    position: absolute;
+    top:0px;
+    left: -30px;
+    height: 100%;
+    background-color:rgb(255, 147, 147);
+    /* border-radius: 100%; */
+    /* float: right; */
+}
+
+.individualContainerName
+{
+    width: 100%;
+    overflow-x: auto;
+    /* background-color: red; */
+}
+#submitInputs
+{
+    font-size: 20px;
+    height: 30px;
+}
+
+@media (max-width: 1250px) {
+    #inputContainerNamesContainer
+    {
+        max-width: none;
+    }
+    #inputContainerName
+    {
+        max-width: 300px;
+    }
+    .inputSection
+    {
+        width: 90%;
+    }
+    #loadUnloadInputs
+    {
+        display: inline-block;
+        margin: auto;
+        /* background-color: red; */
+        text-align: center;
+    }
+    #loadUnloadInputs,
+    #loadUnloadInputs > *
+    {
+        margin:auto
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translate(0);
+    }
+      90% {
+        transform: translate(-100%);
+    }
+      91% {
+        transform: translate(0);
+      }
+  }
