@@ -16,8 +16,8 @@ const firebaseConfig = {
   projectId: "keoghsport-logfiles",
   storageBucket: "keoghsport-logfiles.appspot.com",
   messagingSenderId: "1046833789454",
-  appId: "1:1046833789454:web:5328f857faa8324a01da5f",
-  measurementId: "G-TDTE7CKWK6"
+  appId: "1:1046833789454:web:460c06921514081c01da5f",
+  measurementId: "G-2NB9W75LQ8"
 
   // apiKey: "AIzaSyA3fCoNxry8r-3ADna0Ii3lOxU7wx8S778",
   // authDomain: "testenviroment-aa870.firebaseapp.com",
